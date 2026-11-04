@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "Place Brokers",
+    "slug": "place-brokers",
+    "scheme": "placebrokers",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#08152b",
+    "icon": "./assets/icone.png",
+    "splash": {
+      "image": "./assets/icone.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#08152b"
+    },
+    "android": {
+      "package": "br.com.placebrokers.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icone.png",
+        "backgroundColor": "#08152b"
+      },
+      "permissions": ["POST_NOTIFICATIONS"]
+    },
+    "ios": {
+      "bundleIdentifier": "br.com.placebrokers.app",
+      "supportsTablet": false
+    },
+    "plugins": [
+      "expo-secure-store",
+      ["expo-notifications", { "color": "#e9ad5a" }],
+      "@react-native-community/datetimepicker"
+    ],
+    "extra": {
+      "eas": {}
+    }
+  }
+}
